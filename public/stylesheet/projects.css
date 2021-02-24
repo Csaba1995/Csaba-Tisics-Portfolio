@@ -1,0 +1,79 @@
+@import url("main.css");
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+#main {
+  margin-left: 100px;
+  font-family: "JetBrains Mono", monospace;
+  color: #cfd5ca;
+}
+.h-100 {
+  min-width: 250px;
+  background-color: #3e4637 !important;
+  float: right;
+  justify-content: right;
+}
+
+h1 {
+  padding-top: 20px;
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  color: white;
+}
+.card-btn {
+  border: 1px solid gray;
+}
+#sidebar {
+  height: 100%;
+  position: sticky;
+  top: 73%;
+  padding-left: 1rem;
+}
+#projectPage {
+  display: block;
+}
+
+.nav-button {
+  background: transparent;
+  border: transparent;
+  color: white;
+  opacity: 70%;
+}
+.nav-button:hover {
+  text-decoration: underline;
+}
+
+.col-md-4 {
+  margin: 25px 0px 20px 0px;
+}
+
+.sidenav a {
+  padding-left: 15px;
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+div.popup-content {
+  position: fixed;
+
+  transform: translate(-50%, 0px);
+  left: 50%;
+}
+.popup {
+  height: 250%;
+}

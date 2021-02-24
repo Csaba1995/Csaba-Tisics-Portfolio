@@ -1,0 +1,219 @@
+body {
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  /* -webkit-background-size: cover;
+    -moz-background-size: cover; */
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu {
+  width: 160px;
+  height: 185px;
+  transform: translate(-25%, -50%);
+  top: 85%;
+  margin-left: 24px;
+  position: absolute;
+  text-align: left;
+}
+
+ul.metanav {
+  padding-left: 30px;
+}
+
+.button {
+  transition: 0.4s;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 14px;
+  bottom: 0;
+}
+
+.nav-button {
+  background: transparent;
+  border: transparent;
+  color: white;
+  opacity: 70%;
+}
+.nav-button:hover {
+  text-decoration: underline;
+}
+.popup {
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
+.popup-header {
+  float: left;
+}
+.popup-content {
+  height: 80%;
+  width: 80%;
+  background: #4c5844;
+  border-radius: 5px;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 25px;
+  margin: auto;
+  top: 50px;
+  border: 2px solid darkred;
+  resize: both;
+}
+div.popup-content {
+  resize: both;
+  overflow: hidden;
+  border: 1px solid black;
+  max-height: 92%;
+  max-width: 95%;
+  min-width: 35%;
+  min-height: 500px;
+}
+#closeconsole {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.popup-box {
+  height: 86%;
+  width: 100%;
+  margin: 25px auto;
+  background: #3e4637;
+  color: #cfd5ca;
+  border: 2px solid black;
+  overflow-y: scroll;
+}
+.submit {
+  float: right;
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: #4c5844;
+  color: white;
+  border-color: gray;
+}
+.popup-footer {
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+}
+.center {
+  text-align: center;
+  margin: 0px;
+  color: white;
+}
+
+.terminal-output {
+  overflow-y: hidden;
+  overflow: auto;
+}
+.dummy-keyboard {
+  opacity: 50;
+  filter: alpha(opacity=50);
+}
+.code {
+  color: #d7566a;
+}
+.success {
+  color: lightgreen;
+}
+.projectPage {
+  text-decoration: none;
+}
+
+/* Scrollbar Buttons */
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+  border: 1px solid black;
+}
+/* Up */
+#style-1::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #555555 transparent;
+}
+
+#style-1::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+/* Down */
+#style-1::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 10px 10px 10px 10px;
+
+  border-color: #555555 transparent transparent transparent;
+}
+
+#style-1::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+  background-color: #4c5844;
+}
+
+/* ================================= */
+#style-1::-webkit-scrollbar {
+  width: 22px;
+  border: 5px solid white;
+  background-color: #5a6a50;
+}
+
+#style-1::-webkit-scrollbar-track {
+  background-color: #5a6a50;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+  background-color: #3e4637;
+  border: 1.6px solid black;
+  background-clip: padding-box;
+}
+#style1::-webkit-resizer {
+  background-color: #3e4637;
+  color: white;
+  display: auto;
+}
+
+input#dummyKeyboard.console-input {
+  height: 35px;
+  width: 85%;
+  padding: 5px;
+  display: block;
+  border: 1px solid gray;
+  bottom: 10px;
+  background: #3e4637;
+  position: absolute;
+  color: whitesmoke;
+}
+.noselect {
+  outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  input#dummyKeyboard.console-input {
+    width: 83%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  input#dummyKeyboard.console-input {
+    width: 78%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  input#dummyKeyboard.console-input {
+    width: 73%;
+  }
+}

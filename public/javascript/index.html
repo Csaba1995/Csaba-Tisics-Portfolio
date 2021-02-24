@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/stylesheet/main.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <title>Csaba Tisics Portfolio</title>
+</head>
+
+<body>
+    <nav class="navmenu">
+        <ul class="metanav">
+            <form method="get" action="Csaba-Tisics-Resume.pdf">
+                <button type="submit" class="nav-button noselect">Resume</button>
+            </form>
+            <button id="openconsole" class="nav-button noselect">Console</button>
+            <br />
+            <button id="projectPage" class="nav-button noselect" onclick="location.href='./projects'"
+                type="button">Projects</button>
+            <br />
+            <a href="https://www.google.com/"><button class="nav-button noselect">Quit</button>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="popup">
+        <div class="popup-content">
+            <img id="closeconsole" src="https://img.icons8.com/metro/26/000000/close-window.png" />
+            <div class="popup-header">
+                <h4>Console</h4>
+            </div>
+            <div class="popup-box" id="style-1">
+                <div class="term_demo"></div>
+
+                <div class="terminal-window primary-bg" onclick="document.getElementById('dummyKeyboard').focus();">
+                    <div class="terminal-output" id="terminalOutput">
+                        <div class="terminal-line">
+                            <span class="help-msg">:::Welcome to Csaba Tisics portfolio — Type
+                                <span class="code">help</span> for a list of supported
+                                commands:::</span>
+                        </div>
+                        <div class="terminal-line">
+                            <div class="terminal-line">
+                                <span>➜</span> <span>~</span> help
+                            </div>
+                            Supported commands: <span class="code">about</span>,
+                            <span class="code">resume</span>,
+                            <span class="code">experience</span>,
+                            <span class="code">education</span>,
+                            <span class="code">skills</span>,
+                            <span class="code">contact</span>
+                        </div>
+                    </div>
+                    <div class="terminal-line">
+                        <input type="text" id="dummyKeyboard" class="console-input noselect" autofocus />
+                    </div>
+                </div>
+                <div>
+                    <span class="success">➜</span> <span class="directory">~</span>
+                    <span class="user-input" id="userInput" readonly></span>
+
+                    <input type="button" id="submit-btn" class="submit noselect" onclick="" value="Submit" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascript/popup.js"></script>
+</body>
+
+</html>
