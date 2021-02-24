@@ -38,17 +38,17 @@ const COMMANDS = {
   help:
     'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">contact</span>',
   about:
-    "Hello,<br> my name is Csaba Tisics, I am a 24 year old junior web developer currently living in Vienna. <br>Extremely motivated to constantly develop my skills and grow professionally. Outside of coding, I like to go swimming, playing computer games or going for a tripp in the nature.",
+    "Hello,<br> my name is Csaba Tisics, I am a 25 year old junior web developer currently living in Vienna. <br>Extremely motivated to constantly develop my skills and grow professionally. Outside of coding, I like to go swimming, playing computer games or going for a trip in the nature.",
   skills:
-    '<span class="code">Languages: </span>HTML, CSS, JavaScript <br><span class="code">Technologies:</span> Git, SQL<br><span class="code">Frameworks:</span> NodeJs, Express',
+    '<span class="code">Languages: </span>Hungarian, German, English, Serbian, Croatian <br><span class="code">Programing Languages: </span>HTML, CSS, JavaScript <br><span class="code">Technologies:</span> Git, MongoDB<br><span class="code">Frameworks:</span> Jquery, NodeJs, Express',
   education:
-    "Philological Gymnasium for talented students „Dezső Kosztolányi”.<br> Subotica, Serbia",
+    "--Philological Gymnasium for talented students „Dezső Kosztolányi”.<br> Subotica, Serbia <br> --University Of Szeged <br>Institute of Physical Education and Sports Science BA",
   resume:
-    "<a href='./Csaba_Tisics_Resume.pdf' class='code link'>Csaba Tisics resume.pdf</a>",
+    "<a href='./Csaba-Tisics-Resume.pdf' class='code link'>Csaba Tisics resume.pdf</a>",
   experience:
     "I have done a few projects from different web developer bootcamps, which you can check out by going to the <a class='code' href='/projects'>Projects</a> page, where you can see it online and on Github aswell. Unfortunately I have no working experience in the field yet, but I am very excited for a start! ",
   contact:
-    'e-mail address: <span class="success">tisitycsaba@yahoo.com</span><br> Tel: <span class="success">+43660 7943 525</span><br> Social: <a href="https://www.linkedin.com/in/csaba-tisics/" target="_blank" class="success">Linked In</a><br> <a href="https://github.com/Csaba1995" target="_blank" class="success">GitHub</a>',
+    'e-mail address: <span class="success">tisitycsaba@yahoo.com</span><br> Tel: <span class="success">+43660 7943 525</span><br> Social: <a href="https://www.linkedin.com/in/csaba-tisics/" target="_blank" class="success">LinkedIn</a><br> <a href="https://github.com/Csaba1995" target="_blank" class="success">GitHub</a>',
     
 };
 let userInput, terminalOutput;
