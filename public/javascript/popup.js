@@ -35,21 +35,19 @@ function closeWindow() {
 // ========================================================================
 const KEY_CODES = [38];
 const COMMANDS = {
-  help:
-    'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">contact</span>',
+  help: 'Supported commands: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">education</span>, <span class="code">skills</span>, <span class="code">contact</span>, <span class="code">portfolio</span>',
   about:
-    "Hello,<br> my name is Csaba Tisics, I am a 25 year old junior web developer currently living in Vienna. <br>Extremely motivated to constantly develop my skills and grow professionally. Outside of coding, I like to go swimming, playing computer games or going for a trip in the nature.",
+    "Hello,<br> my name is Csaba Tisics, I am a 24 year old junior web developer currently living in Vienna. <br>Extremely motivated to constantly develop my skills and grow professionally. Outside of coding, I like to go swimming, playing computer games or going for a tripp in the nature.",
   skills:
-    '<span class="code">Languages: </span>Hungarian, German, English, Serbian, Croatian <br><span class="code">Programing Languages: </span>HTML, CSS, JavaScript <br><span class="code">Technologies:</span> Git, MongoDB<br><span class="code">Frameworks:</span> Jquery, NodeJs, Express',
+    '<span class="code">Languages: </span>HTML, CSS, JavaScript,  <br><span class="code">Technologies:</span> Git, NodeJs, jQuery<br><span class="code">Frameworks:</span> Bootstrap, Express, React',
   education:
-    "--Philological Gymnasium for talented students „Dezső Kosztolányi”.<br> Subotica, Serbia <br> --University Of Szeged <br>Institute of Physical Education and Sports Science BA",
+    "Philological Gymnasium for talented students „Dezső Kosztolányi”.<br> Subotica, Serbia <br> Autodidactic learning Webdevelopment<br>(Online Courses, FreeCodeCamp, Youtube, Github, Stack Overflow...etc) <br> ",
   resume:
-    "<a href='./Csaba-Tisics-Resume.pdf' class='code link'>Csaba Tisics resume.pdf</a>",
+    "<a href='./Csaba_Tisics_Resume.pdf' class='code code-h'>Csaba Tisics resume.pdf</a>",
   experience:
-    "I have done a few projects from different web developer bootcamps, which you can check out by going to the <a class='code' href='/projects'>Projects</a> page, where you can see it online and on Github aswell. Unfortunately I have no working experience in the field yet, but I am very excited for a start! ",
+    "I have done a few projects from different web developer bootcamps, which you can check out by going to the <a class='code code-h' href='/projects' target='_blank'>Projects</a> page, where you can view it online or on Github aswell. Unfortunately I have no working experience in the field yet, but I am very excited for a start! ",
   contact:
-    'e-mail address: <span class="success">tisitycsaba@yahoo.com</span><br> Tel: <span class="success">+43660 7943 525</span><br> Social: <a href="https://www.linkedin.com/in/csaba-tisics/" target="_blank" class="success">LinkedIn</a><br> <a href="https://github.com/Csaba1995" target="_blank" class="success">GitHub</a>',
-    
+    'e-mail address: <span class="code">tisitycsaba@yahoo.com</span><br> Tel: <span class="code">+43 660 7943 525</span><br> Social:<ul class="socials"><li><a class=" code social-link" href="https://www.linkedin.com/in/csaba-tisics/" target="_blank" class="code">Linked In</a></li><br> <li><a class="social-link code" href="https://github.com/Csaba1995" target="_blank" >GitHub</a></li></ul>',
 };
 let userInput, terminalOutput;
 /////////////////////////
@@ -106,6 +104,9 @@ const execute = function executeCommand(input) {
 
   terminalOutput.innerHTML = `${terminalOutput.innerHTML}<div class="terminal-line">${output}</div>`;
   terminalOutput.scrollTop = terminalOutput.scrollHeight;
+
+  var messageBody = document.querySelector("#style-1");
+  messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 };
 
 //============================================

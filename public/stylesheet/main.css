@@ -1,10 +1,16 @@
 body {
   background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
+
   /* -webkit-background-size: cover;
     -moz-background-size: cover; */
   margin: 0;
   padding: 0;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background: url("small.jpg") no-repeat center center fixed;
+  }
 }
 
 .navmenu {
@@ -92,7 +98,7 @@ div.popup-content {
   margin: 25px auto;
   background: #3e4637;
   color: #cfd5ca;
-  border: 2px solid black;
+  border: 1px solid rgb(43, 43, 43);
   overflow-y: scroll;
 }
 .submit {
@@ -128,6 +134,10 @@ div.popup-content {
 .code {
   color: #d7566a;
 }
+.code-h:hover {
+  text-decoration: none;
+  color: #fb0018;
+}
 .success {
   color: lightgreen;
 }
@@ -135,6 +145,16 @@ div.popup-content {
   text-decoration: none;
 }
 
+.socials {
+  line-height: 1rem;
+  list-style: circle;
+}
+
+.social-link:hover {
+  color: #fb0018;
+  text-decoration: none;
+  font-weight: 700;
+}
 /* Scrollbar Buttons */
 ::-webkit-scrollbar-button:single-button {
   background-color: #bbbbbb;
@@ -167,7 +187,7 @@ div.popup-content {
 
 /* ================================= */
 #style-1::-webkit-scrollbar {
-  width: 22px;
+  width: 1rem;
   border: 5px solid white;
   background-color: #5a6a50;
 }
@@ -178,7 +198,7 @@ div.popup-content {
 
 #style-1::-webkit-scrollbar-thumb {
   background-color: #3e4637;
-  border: 1.6px solid black;
+  border: 0.5px solid rgb(75, 74, 74);
   background-clip: padding-box;
 }
 #style1::-webkit-resizer {
