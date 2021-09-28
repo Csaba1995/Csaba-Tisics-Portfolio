@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <link rel="stylesheet" href="/stylesheet/main.css" />
@@ -11,22 +11,32 @@
 <body>
     <nav class="navmenu">
         <ul class="metanav">
-            <form method="get" action="Csaba-Tisics-Resume.pdf">
-                <button type="submit" class="nav-button noselect">Resume</button>
-            </form>
-            <button id="openconsole" class="nav-button noselect">Console</button>
-            <br />
-            <button id="projectPage" class="nav-button noselect" onclick="location.href='./projects'"
-                type="button">Projects</button>
-            <br />
-            <a href="https://www.google.com/"><button class="nav-button noselect">Quit</button>
-            </a>
+            <li>
+                <form method="get" action="Csaba-Tisics-Resume.pdf">
+                    <button type="submit" class="nav-button noselect">Resume</button>
+                </form>
+            </li>
+            <li>
+                <button id="openconsole" class="nav-button noselect">Console</button>
+            </li>
+            <li>
+                <button id="projectPage" class="nav-button noselect" onclick="location.href='./projects'"
+                    type="button">Projects</button>
+            </li>
+
+
+
+
+
+            <li> <a href="https://www.google.com/"><button class="nav-button noselect">Quit</button>
+                </a></li>
+
         </ul>
     </nav>
 
     <div class="popup">
         <div class="popup-content">
-            <img id="closeconsole" src="https://img.icons8.com/metro/26/000000/close-window.png" />
+            <img id="closeconsole" src="https://img.icons8.com/metro/26/000000/close-window.png" alt="close console" />
             <div class="popup-header">
                 <h4>Console</h4>
             </div>

@@ -1,5 +1,8 @@
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 body {
-  background: url("background.jpg") no-repeat center center fixed;
+  background: url("small.jpg") no-repeat center center fixed;
   background-size: cover;
 
   /* -webkit-background-size: cover;
@@ -7,24 +10,26 @@ body {
   margin: 0;
   padding: 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 767px) {
   body {
-    background: url("small.jpg") no-repeat center center fixed;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
   }
 }
 
 .navmenu {
-  width: 160px;
-  height: 185px;
+  width: fit-content;
+  height: fit-content;
   transform: translate(-25%, -50%);
   top: 85%;
   margin-left: 24px;
-  position: absolute;
+  position: fixed;
   text-align: left;
 }
 
 ul.metanav {
   padding-left: 30px;
+  list-style: none;
 }
 
 .button {
@@ -235,5 +240,33 @@ input#dummyKeyboard.console-input {
 @media only screen and (max-width: 768px) {
   input#dummyKeyboard.console-input {
     width: 73%;
+  }
+}
+@media only screen and (min-width: 468px) {
+  p {
+    font-size: 0.8rem;
+  }
+  span a {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 1rem;
+  }
+  span a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1480px) {
+  body {
+    background: url("small.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 767px) {
+  body {
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
   }
 }

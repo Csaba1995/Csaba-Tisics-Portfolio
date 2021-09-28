@@ -16,34 +16,108 @@
 </head>
 
 <body>
+    <nav class="navmenu">
+        <ul class="metanav">
+            <li>
+                <form method="get" action="Csaba-Tisics-Resume.pdf">
+                    <button type="submit" class="nav-button noselect">Resume</button>
+                </form>
+            </li>
+            <li>
+                <button id="openconsole" class="nav-button noselect">Console</button>
+            </li>
+            <li>
+                <button id="projectPage" class="nav-button noselect" onclick="location.href='./projects'"
+                    type="button">Projects</button>
+            </li>
+
+
+
+
+
+            <li> <a href="javascript:history.back()"><button class="nav-button noselect">Back</button>
+                </a></li>
+
+        </ul>
+    </nav>
 
 
 
     <div class="wrapper">
-        <div class="left col-xs-1" id="sidebar">
-            <a>
-                <form method="get" action="Csaba_Tisics_Resume.pdf">
-                    <button type="submit" class="nav-button noselect">Resume</button>
-                </form>
-            </a>
-            <a><button id="openconsole" class="nav-button noselect">Console</button></a><br>
-
-            <a><button id="projectPage" class="nav-button noselect" onclick="location.href='./projects'"
-                    type="button">Projects</button></a>
-            <a href="javascript:history.back()"><button class="nav-button noselect">Back</button>
-            </a>
-        </div>
-
-
         <div id="main" class="right col-xs-11">
             <div class="container-fluid">
-                <h1 class="title">Projects:</h1>
 
+
+                <!-- new row -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="../stylesheet/Darkmode.JPG" class="card-img-top" alt="Dark Mode">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Dark Mode</h5>
+                                <p class="card-text">
+                                    An online application with toggle functionality to change the theme of the whole
+                                    website. The project was built with React.
+                                </p>
+                                <span class="ws-link btn btn-outline-dark"><a
+                                        href="https://peaceful-shannon-c2f6da.netlify.app/" target="_blank"
+                                        class="btn mt-auto">View it Online
+                                    </a></span>
+                                <span class="ws-link btn btn-outline-dark"><a
+                                        href="https://github.com/Csaba1995/Dark-mode" target="_blank" class="btn">Or
+                                        on Github
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="../stylesheet/Stripe.JPG" class="card-img-top" alt="Stripe clone">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Stripe Landing Page</h5>
+                                <p class="card-text">A Stripe website clone. A dynamic React home page with the main
+                                    focus on the navbar functionality, inspired by John
+                                    Smilga. </p>
+                                <span class="ws-link btn btn-outline-dark"><a
+                                        href="https://admiring-bohr-13d286.netlify.app/" target="_blank"
+                                        class="btn mt-auto">View it Online
+                                    </a></span>
+                                <span class="ws-link btn btn-outline-dark"><a
+                                        href="https://github.com/Csaba1995/Stripe-landing-page" target="_blank"
+                                        class="btn">Or
+                                        on Github
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="../stylesheet/RandomUser.JPG" class="card-img-top" alt="Random user">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Random User Genertor</h5>
+                                <p class="card-text">A web application which
+                                    generates a random user and retrieves additional data from the randomuser.me API.
+                                    The app is bulit with React.
+                                </p>
+                                <span class="ws-link btn btn-outline-dark"><a
+                                        href="https://nifty-gates-952135.netlify.app/" target="_blank"
+                                        class="btn mt-auto">View it Online
+                                    </a></span>
+                                <span class="ws-link btn btn-outline-dark"><a
+                                        href="https://github.com/Csaba1995/Random-user" target="_blank" class="btn">Or
+                                        on Github
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- new row end -->
 
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="../stylesheet/Cocktail.JPG" class="card-img-top" alt="Ratings app">
+                            <img src="../stylesheet/Cocktail.JPG" class="card-img-top" alt="CocktailDb">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Cocktail DB</h5>
                                 <p class="card-text"> A React application, to find cocktails and more information about
@@ -90,7 +164,7 @@
                                 <p class="card-text">A web application which
                                     works
                                     with
-                                    API's.The app is made with Express and uses OMDbapi for data and Semantic UI for
+                                    API's.The app uses OMDbapi for retrieving data and Semantic UI for
                                     styling.
                                 </p>
                                 <span class="ws-link btn btn-outline-dark"><a
@@ -105,6 +179,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card h-100">
@@ -129,10 +204,11 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="../stylesheet/Product.jpg" class="card-img-top" alt="Hack Assembler">
+                            <img src="../stylesheet/Product.jpg" class="card-img-top" alt="Product Landing Page">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Product Landing Page</h5>
-                                <p class="card-text">A one page website with all information of product (Trombones) from
+                                <p class="card-text">A one page website with all information of product
+                                    (Trombones) from
                                     scratch using pure HTML and CSS
                                     with Free Code Camp's example as reference. </p>
                                 <span class="ws-link btn btn-outline-dark"><a
@@ -149,7 +225,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="../stylesheet/todolist.jpg" class="card-img-top" alt="Hack Assembler">
+                            <img src="../stylesheet/todolist.jpg" class="card-img-top" alt="ToDoList">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">To Do List</h5>
                                 <p class="card-text">A simple To Do List from scratch done with HTML, CSS and Jquery.
@@ -246,7 +322,7 @@
 
     <div class="popup">
         <div class="popup-content">
-            <img id="closeconsole" src="https://img.icons8.com/metro/26/000000/close-window.png" />
+            <img id="closeconsole" src="https://img.icons8.com/metro/26/000000/close-window.png" alt="close console" />
             <div class="popup-header">
                 <h4>Console</h4>
             </div>
